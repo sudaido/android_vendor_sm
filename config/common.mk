@@ -156,8 +156,8 @@ PRODUCT_PACKAGES += \
     WeatherProvider
 
 # Exchange support
-PRODUCT_PACKAGES += \
-    Exchange2
+#PRODUCT_PACKAGES += \
+#    Exchange2
 
 # Extra tools in SM
 PRODUCT_PACKAGES += \
