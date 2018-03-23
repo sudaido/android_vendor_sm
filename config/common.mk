@@ -105,6 +105,9 @@ PRODUCT_COPY_FILES +=  \
 # Include SM audio files
 include vendor/sm/config/sm_audio.mk
 
+# Include private files
+include vendor/sm/config/private.mk
+
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/sm/config/cmsdk_common.mk
@@ -150,8 +153,8 @@ PRODUCT_PACKAGES += \
     WeatherProvider
 #	CMFileManager \
 #	CMUpdater \
-#    Trebuchet \
-#    Jelly \	
+#  Trebuchet \
+#  Jelly \	
 #	Eleven \
 #	SMSetupWizard \
 
