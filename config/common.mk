@@ -63,16 +63,16 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilt/common/etc/init.local.rc:root/init.sm.rc
 
 # USE V4A
-ifeq ($(WITH_V4A),true)
-PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/V4A/app/ViPER4Android && \
-    find vendor/sm/prebuilt/V4A/app/ViPER4Android -name '*.apk' \
-    -printf '%p:system/app/ViPER4Android/%f ')
-PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilt/common/lib/soundfx/libv4a.so:system/lib/soundfx/libv4a.so
-else
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
+#ifeq ($(WITH_V4A),true)
+#PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/V4A/app/ViPER4Android && \
+#    find vendor/sm/prebuilt/V4A/app/ViPER4Android -name '*.apk' \
+#    -printf '%p:system/app/ViPER4Android/%f ')
+#PRODUCT_COPY_FILES += \
+#    vendor/sm/prebuilt/common/lib/soundfx/libv4a.so:system/lib/soundfx/libv4a.so
+#else
+#PRODUCT_PACKAGES += \
+#    AudioFX
+#endif
 
 # Google PinYin
 #PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/google/app/GooglePinYin && \
