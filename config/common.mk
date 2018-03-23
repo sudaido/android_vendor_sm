@@ -75,12 +75,12 @@ PRODUCT_PACKAGES += \
 endif
 
 # Google PinYin
-PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/google/app/GooglePinYin && \
-    find vendor/sm/prebuilt/google/app/GooglePinYin -name '*.apk' \
-    -printf '%p:system/app/GooglePinYin/%f ')
-PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/google/app/GooglePinYin && \
-    find vendor/sm/prebuilt/google/app/GooglePinYin -name '*.so' \
-    -printf '%p:system/app/GooglePinYin/lib/arm/%f ')
+#PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/google/app/GooglePinYin && \
+#    find vendor/sm/prebuilt/google/app/GooglePinYin -name '*.apk' \
+#    -printf '%p:system/app/GooglePinYin/%f ')
+#PRODUCT_COPY_FILES += $(shell test -d vendor/sm/prebuilt/google/app/GooglePinYin && \
+#    find vendor/sm/prebuilt/google/app/GooglePinYin -name '*.so' \
+#    -printf '%p:system/app/GooglePinYin/lib/arm/%f ')
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
