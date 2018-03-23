@@ -142,18 +142,18 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    CMFileManager \
     CMSettingsProvider \
-    CMUpdater \
-    SMSetupWizard \
-    Eleven \
     PhoneLocationProvider \
     ExactCalculator \
-    Jelly \
     LockClock \
-    Trebuchet \
     WallpaperPicker \
     WeatherProvider
+#	CMFileManager \
+#	CMUpdater \
+#    Trebuchet \
+#    Jelly \	
+#	Eleven \
+#	SMSetupWizard \
 
 # Exchange support
 #PRODUCT_PACKAGES += \
