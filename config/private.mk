@@ -5,4 +5,5 @@ PRODUCT_PACKAGES += \
     Lawnchair \
     LawnFeed \
     Music \
+    Venus \
     Via
